@@ -1,29 +1,38 @@
-html{
+html {
   box-sizing: border-box;
   font-family: 'Archivo', sans-serif;
   font-size: 100%;
   scroll-behavior: smooth;
 }
 
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-footer{
+main {
+  background: linear-gradient(119deg, #770da5, #000000, #5c038e, #000000, #6e289d, #1a0229);
+  background-size: 360% 360%;
+  animation: gradient-animation 120s ease infinite;
+}
+
+footer {
   @include Center;
   background-color: #000;
   height: 2rem;
-  a{
+
+  a {
     opacity: 0.5;
     color: #fff;
   }

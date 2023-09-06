@@ -1,8 +1,12 @@
 .services {
-  background-color: #000;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.5px);
+  -webkit-backdrop-filter: blur(17.5px);
 
-  height: 130vh;
+  color: white;
+
+  padding-block: 4rem;
 
   @include Center;
   flex-direction: column;
@@ -26,22 +30,13 @@
 
       border: 1px solid #fff;
       padding: 2rem;
-      border-radius: 1rem;
       width: 60%;
-      height: 30vh;
-      background-image: repeating-conic-gradient(from 267deg at 15% 87%,
-          hsla(11.86, 81.13%, 20.78%, 0.9484300804976966) 52%,
-          hsla(185, 46.15%, 15.29%, 0.8186872098831244) 96%),
-        repeating-conic-gradient(from 107deg at 32% 38%,
-          hsla(0, 0%, 36.86%, 0.7793629976876078) 55%,
-          hsla(30.51, 71.08%, 16.27%, 0.7232131130284505) 90%),
-        radial-gradient(ellipse at 69% 89%,
-          hsla(37.5, 65.45%, 21.57%, 0.07419196943694106) 8%,
-          hsla(247.04, 80.2%, 60.39%, 0.9591088006384694) 36%),
-        conic-gradient(from 267deg at 25% 25%,
-          hsla(11.29, 84.55%, 43.14%, 0.21327389429853216) 59%,
-          hsla(185.16, 56.36%, 32.35%, 0.9349945585523505) 78%),
-        linear-gradient(303deg, #5b4013 31%, #9a9aa7 46%);
+      height: 20rem;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(17.5px);
+      -webkit-backdrop-filter: blur(17.5px);
 
       svg {
         height: 2rem;
@@ -62,6 +57,15 @@
         text-align: start;
         line-height: 1.25;
       }
+
+            ul {
+              margin-top: 1rem;
+              font-size: 14px;
+      
+              li {
+                margin-bottom: 10px;
+              }
+            }
     }
   }
 }
@@ -87,26 +91,15 @@
         border: 1px solid #fff;
         border-radius: 8px;
         margin-bottom: 0;
-        opacity: 0.7;
         height: 50vh;
         width: 35vh;
         transition: background-image 0.2s ease-in-out;
 
         &:hover {
-          opacity: 1;
-          background-image: repeating-conic-gradient(from 267deg at 15% 87%,
-              hsla(11.86, 81.13%, 20.78%, 0.9484300804976966) 52%,
-              hsla(185, 46.15%, 15.29%, 0.8186872098831244) 96%),
-            repeating-conic-gradient(from 107deg at 32% 38%,
-              hsla(0, 0%, 36.86%, 0.7793629976876078) 55%,
-              hsla(30.51, 71.08%, 16.27%, 0.7232131130284505) 90%),
-            radial-gradient(ellipse at 69% 89%,
-              hsla(37.5, 65.45%, 21.57%, 0.07419196943694106) 8%,
-              hsla(247.04, 80.2%, 60.39%, 0.9591088006384694) 36%),
-            conic-gradient(from 267deg at 25% 25%,
-              hsla(11.29, 84.55%, 43.14%, 0.21327389429853216) 59%,
-              hsla(185.16, 56.36%, 32.35%, 0.9349945585523505) 78%),
-            linear-gradient(303deg, #5b4013 31%, #9a9aa7 46%);
+          background: rgba(255, 255, 255, 0.06);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(17.5px);
+          -webkit-backdrop-filter: blur(17.5px);
 
           transition: background-image 0.2s ease-in-out;
         }
@@ -122,9 +115,28 @@
         }
 
         p {
-          font-size: 14px;
-          text-align: justify;
-          line-height: 1.25;
+          font-size: 18px;
+          text-align: start;
+          line-height: 2;
+          opacity: 0.7;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        ul {
+          margin-top: 2rem;
+          font-size: 18px;
+
+          li {
+            margin-bottom: 1rem;
+            opacity: 0.7;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
         }
       }
     }
