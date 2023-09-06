@@ -1,0 +1,30 @@
+html{
+  box-sizing: border-box;
+  font-family: 'Archivo', sans-serif;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+footer{
+  @include Center;
+  background-color: #000;
+  height: 2rem;
+  a{
+    opacity: 0.5;
+    color: #fff;
+  }
+}

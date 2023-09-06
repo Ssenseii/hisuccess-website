@@ -1,0 +1,104 @@
+.hero {
+  position: relative;
+  display: flex;
+  height: calc(100vh - 4rem);
+
+
+  &__text {
+    position: absolute;
+    z-index: 3;
+
+    padding: 1rem;
+    padding-bottom: 4rem;
+    
+    height: 100%;
+    width: 100%;
+
+    color: var(--blue);
+    background-image: radial-gradient(ellipse at 76% 71%,
+          hsla(215.11, 83.93%, 56.08%, 0.42760422300194545) 3%,
+          hsla(280.71, 66.67%, 32.94%, 0.6065195546308928) 87%),
+        conic-gradient(from 8deg at 69% 86%,
+          hsla(184.4, 80.74%, 73.53%, 0.0886580817260485) 5%,
+          hsla(215.33, 78.95%, 22.35%, 0.3781758487327669) 12%),
+        linear-gradient(230deg,
+          hsla(313.17, 63.73%, 62.16%, 0.9258228050663548) 55%,
+          hsla(11.3, 99.04%, 59.02%, 0.9028013032936575) 59%),
+        linear-gradient(214deg,
+          hsla(247.04, 80.2%, 60.39%, 0.8708859942526248) 5%,
+          hsla(12.92, 100%, 87.25%, 0.8920079493041806) 74%),
+        repeating-linear-gradient(230deg, #725fff 15%, #07100c 75%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &-taste {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+    }
+    
+    &-title {
+      font-weight: 800;
+      font-size: 42px;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+    
+    &-subtitle {
+      width: 48ch;
+      margin-bottom: 4rem;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 500;
+      opacity: 0.8;
+      color: #fff;
+    }
+
+    &-action {
+      display: flex;
+      flex-direction: row;
+      background-color: #000;
+      color: #fff;
+
+      height: 3rem;
+      width: 8rem;
+      border-radius: 8px;
+
+      &-button {
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        color: white;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    position: static;
+    align-items: center;
+    height: 100vh;
+
+    &__text {
+      padding-left: 4rem;
+      position: static;
+      width: 100vw;
+
+
+      &-title {
+        font-size: 92px;
+      }
+
+      &-subtitle {
+        font-size: 18px;
+      }
+    }
+  }
+}
